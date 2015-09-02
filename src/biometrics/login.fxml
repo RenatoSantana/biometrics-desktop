@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometrics.LoginController">
+  <children>
+    <AnchorPane id="anchorPane2" prefHeight="300.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" prefHeight="300.0" prefWidth="421.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="430.0">
+              <children>
+                <Label id="label1" layoutX="14.0" layoutY="68.0" styleClass="item-title" text="Login" />
+                <TextField id="textField1" fx:id="userId" layoutX="10.0" layoutY="90.0" prefWidth="415.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+                <Label id="label1" layoutX="13.0" layoutY="139.0" styleClass="item-title" text="Senha" />
+                <PasswordField id="passwordField1" fx:id="password" layoutX="10.0" layoutY="159.0" prefWidth="415.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="137.0" layoutY="14.0" text="Biometrics" textAlignment="CENTER" textFill="#eeecec">
+                           <font>
+                              <Font name="Franklin Gothic Demi" size="33.0" />
+                           </font>
+                        </Label>
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <Button id="button1" fx:id="login" defaultButton="true" layoutX="39.0" layoutY="259.0" onAction="#processLogin" prefHeight="70.0" prefWidth="400.0" text="Acessar" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="41.0" />
+    <HBox id="hBox1" alignment="CENTER" layoutX="12.0" prefHeight="25.0" prefWidth="476.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+      <children>
+        <Label id="label2" fx:id="errorMessage" styleClass="item-title" />
+      </children>
+    </HBox>
+      <Label fx:id="mac" layoutX="159.0" layoutY="348.0" prefHeight="21.0" prefWidth="243.0" styleClass="item-title" />
+  </children>
+  
+     <stylesheets>
+      <URL value="@theme.css" />
+   </stylesheets>
+</AnchorPane>

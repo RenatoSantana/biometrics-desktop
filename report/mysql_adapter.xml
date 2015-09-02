@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>mysql_adapter</name><driver>com.mysql.jdbc.Driver</driver><username>root</username><password>root</password><savePassword>true</savePassword><url>jdbc:mysql://localhost/bd_identificacao_pm</url><database></database><serverAddress></serverAddress><classpath>E:\Bibliotecas\mysql-connector\mysql-connector.jar</classpath></jdbcDataAdapter>

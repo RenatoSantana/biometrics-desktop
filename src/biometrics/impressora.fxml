@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" fx:id="conteudo" prefHeight="600.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometrics.ImpressaoController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="1000.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="combobox" layoutX="198.0" layoutY="216.0" prefHeight="37.0" prefWidth="613.0" promptText="Selecione" styleClass="item-title" />
+            <Label layoutX="262.0" layoutY="57.0" styleClass="header" text="Selecione uma impressora" />
+            <Button layoutX="459.0" layoutY="431.0" mnemonicParsing="false" onAction="#imprimir" text="Imprimir" />
+            <Button fx:id="voltar" layoutX="21.0" layoutY="32.0" mnemonicParsing="false" onAction="#gotoFuncionario" text="Voltar" />
+         </children>
+      </Pane>
+   </children>
+   
+   <stylesheets>
+      <URL value="@theme.css" />
+   </stylesheets>
+</AnchorPane>
